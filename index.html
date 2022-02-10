@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+      <header>
+        <h1 id="title">VALORANT SURVEY FORM</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+        <form class="form-container" id="survey-form">
+        <div class="form-info">
+            <label id="name-label" for="name">Name
+                <input type="text" name="name" class="form-control form-modify" id="name" placeholder="Enter your name" required>
+            </label>
+        </div>
+        <div class="form-info">
+            <label id="email-label" for="email">Email
+                <input type="email" id="email" class="form-control form-modify" name="email" placeholder="Enter your email" required>
+            </label>
+        </div>
+        <div class="form-info">
+            <label id="number-label" for="name">Age
+                <span>(optional)</span>
+            </label>
+            <input type="number" min="10" max="99" name="age" class="form-control form-modify number" id="age" placeholder="Enter your age" required>
+        </div>
+        <div class="form-info">
+            <p>What is your in-game rank?</p>
+            <select name="rank" id="dropdown" class="form-control" required>
+                <option disabled selected value>Select your rank</option>
+                <option value="radiant">Radiant</option>
+                <option value="immortal">Immortal</option>
+                <option value="diamond">Diamond</option>
+                <option value="platinum">Platinum</option>
+                <option value="gold">Gold</option>
+                <option value="lower-rank">Lower Rank</option>
+            </select>
+        </div>
+        <div class="form-info">
+            <p>Would you recommend Valorant to a friend?</p>
+            <label class="radio-btn">
+                <input type="radio" name="user-recommend" class="input-radio" value="definitely" > 
+                Definitely
+            </label>
+            <label class="radio-btn">
+                <input type="radio" name="user-recommend" class="input-radio" value="maybe" > 
+                Maybe
+            </label>
+            <label class="radio-btn">
+                <input type="radio" name="user-recommend" class="input-radio" value="not-sure" > 
+                Not Sure
+            </label>
+        </div>
+        <div class="form-info">
+            <p>What is your favourite weapon skin?</p>
+            <select name="rank"  class="form-control" required>
+                <option disabled selected value>Choose one</option>
+                <option value="oni">Oni</option>
+                <option value="elderflame">Elderflame</option>
+                <option value="reaver">Reaver</option>
+                <option value="prime">Prime</option>
+            </select>
+        </div>
+
+        <div class="form-info">
+            <p>What skins would you like to see in future? 
+                <!-- TODO: fix width issue -->
+                <!-- <span class="clue">(Check all that apply)</span> -->
+            </p>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="reaver-2.0" class="input-checkbox">
+                Reaver 2.0
+            </label>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="prime-3.0" class="input-checkbox">
+                Prime 3.0
+            </label>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="elderflame-2.0" class="input-checkbox">
+                Elderflame 2.0
+            </label>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="wasteland-2.0" class="input-checkbox">
+                Wasteland 2.0
+            </label>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="glitchpop-3.0" class="input-checkbox">
+                Glitchpop 2.0
+            </label>
+            <label class="checkbox-btn">
+                <input type="checkbox" name="prefer" value="blastx-2.0" class="input-checkbox">
+                Blastx 2.0
+            </label>
+        </div>
+
+        <div class="form-info">
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+        </div>
+        <div class="form-info">
+            <button type="submit" id="submit" class="submit-button">Sumbit</button>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
